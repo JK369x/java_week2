@@ -16,8 +16,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner Sc = new Scanner(System.in);
         Main main = new Main();
-        // main.crateManager();
-        // main.loginManager();
+        main.crateManager();
+        main.loginManager();
         System.out.print("Enter amount of all account = ");
         int i = Sc.nextInt();
         System.out.println("Enter Detail of each account.");
@@ -170,19 +170,19 @@ public class Main {
                         switch(option){
                             case 1:
                                 account_atm.checkable();
-                                // menuATM();
+                              
                                 break;
                             case 2:
                                 account_atm.withdrawable();
-                                // menuATM();
+                              
                                 break;
                             case 3:
                                 account_atm.depositeable();
-                                // menuATM();
+                               
                                 break;
                             case 4:
                                 account_atm.Transferable(account_list);
-                                // menuATM();
+                                
                                 break;
                             case 5:
                                 loginAccount();
@@ -195,51 +195,6 @@ public class Main {
             }
         }
     }
-
-    // //*Menu */
-    // private void menuATM(){
-    //     int option;
-       
-    //         do{
-    //             System.out.println("==============================");
-    //             System.out.println("ATM ComputerThanyaburi Bank");
-    //             System.out.println("Account ID :" + account_atm.getAccount_ID());
-    //             System.out.println("Menu Service");
-    //             System.out.println("1. Account Balance");
-    //             System.out.println("2. Withdraw");
-    //             System.out.println("3. Deposit");
-    //             System.out.println("4. Transfer");
-    //             System.out.println("5. Back to login");
-    //             System.out.print("Choose : ");
-    //             option = Sc.nextInt();
-    //             System.out.println("==============================");
-    //             switch(option){
-    //                 case 1:
-    //                     account_atm.checkable();
-    //                     // menuATM();
-    //                     break;
-    //                 case 2:
-    //                     account_atm.withdrawable();
-    //                     // menuATM();
-    //                     break;
-    //                 case 3:
-    //                     account_atm.depositeable();
-    //                     // menuATM();
-    //                     break;
-    //                 case 4:
-    //                     account_atm.Transferable(account_list);
-    //                     // menuATM();
-    //                     break;
-    //                 case 5:
-    //                     loginAccount();
-    //                 default:
-    //                     System.out.println("Invalid option");
-    //             }
-    //         }while(option !=10);
-      
-    
-    // }
-    
 
 
 
